@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
+*{ box-sizing: 	border-box;	 }
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box; 
+}
+.headerpart1 {
+	background: black;
+	color: white;
+	padding: 6px 0px 6px 0px;
+	height: 10em;
+	width: 100%;
+}
+
+.divider {
+	margin: 2% 0 0 1%;
+	padding-left: 50px;
+	background-color: black;
+	height: 50%;
+	width: 100%;
+	display: inline;
+	font-family: 'Revalia', cursive;
+	font-weight: bold;
+	font-size: 9vh;
+	float: left;	
+}
+#ul1 li {
+	display: inline-block;
+	list-style-type: none;
+	color: white;
+	float: right;
+	margin: 1% 1% 1% 0%;
+}
+#ul1 li a {
+	font-size: 70%;
+	color: white;
+	text-decoration: none;
+	padding: 2ex 2ex ;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+.headgrey {
+	background: grey;
+	padding: 15px 10px 10px 10px;
+}
+.fwimage {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background: #0f8a9d;
+    background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.fwimage h1,h2{
+	font-family: 'Krona One', sans-serif;
+	margin:2%;
+}
+.fwimage .clg_pic {
+	height: 50%;
+	width: 80%;
+	margin: 10%
+}
+.footer-main-div{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 5% 0;
+	background: #212121;
+}
+.footer-menu-one {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 2%;
+}
+.footer-menu-one ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;	
+}
+.footer-menu-one ul li {
+	display: inline-block;
+	margin: 0 16px;
+	padding: 1% 1%;
+	background-color: #f8fc0d;
+}
+.footer-menu-one ul li a {
+	font-family: arial;
+	font-size: 80%;
+	font-weight: 600;
+	color: #212121;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	align-items: center;
+}
+.social-icons {
+  margin-left: 30%;
+  margin-top: auto;
+}
+.social-icons ul li{	
+  list-style:none;	
+  display:inline-block;
+  line-height:60px;
+  width:60px;
+  height:60px;
+  background-color:#212121;
+  text-align:center;
+  border:1px solid #f8fc0d;
+  border-radius:50%;
+  margin:5px;
+  transition:0.5s;
+}
+.social-icons ul li a{
+  font-size:28px;
+  color:#f8fc0d;
+  transition:0.5s;
+}
+.social-icons ul li:hover{
+  border-color:#fff;
+  box-shadow:0px 0px 20px #fff,
+    0px 0px 50px #fff;
+}
+.social-icons ul li:hover a{
+  color:#fff;
+}
+.social-icons ul li:nth-child(1):hover a{
+  color:#3b5998;
+}
+.social-icons ul li:nth-child(2):hover a{
+  color:#dd4b39;
+}
+.social-icons ul li:nth-child(3):hover a{
+  color:#007bb6;
+}
+.social-icons ul li:nth-child(4):hover a{
+  color:#bb0000;
+}
+.social-icons ul li:nth-child(5):hover a{
+  color:#00aced;
+}
+.social-icons ul li:nth-child(6):hover a{
+  color:#0077b5;
+}
+.footer-address{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 5%;
+
+}
+.footer-address h1{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.footer-address h2{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-align: center;
+	font-weight:500;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+.footer-email-phone{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.footer-email-phone ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.footer-email-phone ul li{
+	display: inline-block;
+}
+.footer-email-phone ul li a{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-weight:600;
+	font-size: 13px;
+	padding-left: 20px;
+}
+.footer-email-phone ul li a i{
+	color: #fff;
+	padding-right: 5px;
+}
+.footer-email-phone ul li a:hover{
+	color: yellow;
+}
+.footer-email-phone ul li a:hover i{
+	color: yellow;
+}
+.footer-contact-us {
+	color: yellow;
+}
