@@ -1,5 +1,9 @@
 <head>
+<<<<<<< HEAD
   <style>.colii{background-color:"yellow";margin-left: 15%;margin-right: 15%;opacity: 0.9; }</style>
+=======
+  <style>.colii{background-color:"yellow";margin-left: 15%;margin-right: 15%;opacity: 0.9;margin-bottom: 20%; }</style>
+>>>>>>> e8d6e438372d63de65399f6b7134b4fc001812e5
   <title>View</title>
   <style type="text/css">
     .cp{
@@ -32,7 +36,11 @@
       </div>
     </div>
   </form>
+<<<<<<< HEAD
   <!-- <div class="colii"> -->
+=======
+  <div class="colii">
+>>>>>>> e8d6e438372d63de65399f6b7134b4fc001812e5
   <div class="cp">
     <br><br><br>
     <h1>Personal Information</h1>
@@ -42,11 +50,19 @@
       $con = mysqli_connect('localhost','root','','employee');
      
       $id=$_POST['id'];
+<<<<<<< HEAD
       $cp_sql="select designation from employee.register where id='$id'";
 
       $resultcp=mysqli_query($con,$cp_sql);
       $rp = mysqli_fetch_array($resultcp);
       echo $rp[0];
+=======
+      $cp_sql="select desig from employee.register where id='$id'";
+
+      $resultcp=mysqli_query($con,$cp_sql);
+      $rp = mysqli_fetch_array($resultcp);
+      
+>>>>>>> e8d6e438372d63de65399f6b7134b4fc001812e5
       if($con){
         
         if (1) {
@@ -57,7 +73,11 @@
               
               if (mysqli_num_rows($result)>0) {
                   while($row = mysqli_fetch_row($result)) { 
+<<<<<<< HEAD
                       echo "id: " . $row[5]."<br>". " - Name: " . $row[3]. "<br>"." - Phone: " . $row[4]."<br>". " - Address: " . $row[7]."<br>". " - Attendance: " . $row[8]. "<br>"."Qualification :".$row[9];
+=======
+                      echo "id: " . $row[0]."<br>". " - Name: " . $row[1]. "<br>"." - Phone: " . $row[4]."<br>". " - Address: " . $row[5]."<br>". " - Attendance: " . $row[6]. "<br>";
+>>>>>>> e8d6e438372d63de65399f6b7134b4fc001812e5
                   }
               } 
               else {
@@ -93,7 +113,11 @@
           
           if (mysqli_num_rows($result)>0) {
               while($row = mysqli_fetch_row($result)) { 
+<<<<<<< HEAD
                   echo "lab_id: " . $row[2]."<br>". " - lab_no: " . $row[0]."<br>". " - lab_floor: " . $row[3]."<br>" ." - lab_name: " . $row[1]. "<br>";
+=======
+                  echo "lab_id: " . $row[0]."<br>". " - lab_no: " . $row[1]."<br>". " - lab_floor: " . $row[2]."<br>" ." - lab_name: " . $row[3]. "<br>";
+>>>>>>> e8d6e438372d63de65399f6b7134b4fc001812e5
               }
           } 
           else {
@@ -112,7 +136,11 @@
               
               if (mysqli_num_rows($result)>0) {
                   while($row = mysqli_fetch_row($result)) { 
+<<<<<<< HEAD
                       echo "id: " . $row[0]."<br>". " - Salary: " . $row[2]. "<br>"." - Bonus: " . $row[1]."<br>". " - Dues: " . $row[3]."<br>". " - Last_paid_on: " . $row[4]. "<br>";
+=======
+                      echo "id: " . $row[0]."<br>". " - Salary: " . $row[1]. "<br>"." - Bonus: " . $row[2]."<br>". " - Dues: " . $row[3]."<br>". " - Last_paid_on: " . $row[4]. "<br>";
+>>>>>>> e8d6e438372d63de65399f6b7134b4fc001812e5
                   }
               } 
               else {
@@ -135,4 +163,8 @@
     ?>
 </div>
 </div>
+<<<<<<< HEAD
 </body>
+=======
+</body>
+>>>>>>> e8d6e438372d63de65399f6b7134b4fc001812e5
