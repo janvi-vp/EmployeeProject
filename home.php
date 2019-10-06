@@ -32,7 +32,7 @@
 			<nav>
 				<ul id="ul1">
 					<li><a class="headgrey" href="home.php?logout=1">Logout</a></li>
-					<li><a class="headgrey" href="#">View</a></li>
+					<li><a class="headgrey" href="cpgtr.php">View</a></li>
 					<li><a class="headgrey" href="cp_accounts.php">Accounts</a></li>
 					<li><a class="headgrey" href="<?php echo $form ?>"><?php echo $button ?></a></li>
 				</ul>
