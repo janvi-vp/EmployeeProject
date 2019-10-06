@@ -57,7 +57,7 @@
               
               if (mysqli_num_rows($result)>0) {
                   while($row = mysqli_fetch_row($result)) { 
-                      echo "id: " . $row[5]."<br>". " - Name: " . $row[3]. "<br>"." - Phone: " . $row[4]."<br>". " - Address: " . $row[7]."<br>". " - Attendance: " . $row[8]. "<br>"."Qualification :".$row[9];
+                      echo "<br>id: " . $row[5]."<br>". " - Name: " . $row[3]. "<br>"." - Phone: " . $row[4]."<br>". " - Address: " . $row[7]."<br>". " - Attendance: " . $row[8]. "<br>"."Qualification :".$row[9];
                   }
               } 
               else {
