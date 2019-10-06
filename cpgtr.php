@@ -1,9 +1,5 @@
 <head>
-<<<<<<< HEAD
   <style>.colii{background-color:"yellow";margin-left: 15%;margin-right: 15%;opacity: 0.9; }</style>
-=======
-  <style>.colii{background-color:"yellow";margin-left: 15%;margin-right: 15%;opacity: 0.9;margin-bottom: 20%; }</style>
->>>>>>> e8d6e438372d63de65399f6b7134b4fc001812e5
   <title>View</title>
   <style type="text/css">
     .cp{
