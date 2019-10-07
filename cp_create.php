@@ -29,24 +29,24 @@ if ($conn->connect_error) {
 } 
 
 //sql to create table
-$sql = "CREATE TABLE employee.register (
-id INT(6) PRIMARY KEY, 
-namee VARCHAR(30),
-username VARCHAR(30),
-pwd VARCHAR(50),
-phone INT(10),
-addr VARCHAR(30),
-attendance INT(5),
-designation VARCHAR(20),
-qualification VARCHAR(40),
-email VARCHAR(20)
-)";
+// $sql = "CREATE TABLE employee.register (
+// id INT(6) PRIMARY KEY, 
+// namee VARCHAR(30),
+// username VARCHAR(30),
+// pwd VARCHAR(50),
+// phone INT(10),
+// addr VARCHAR(30),
+// attendance INT(5),
+// designation VARCHAR(20),
+// qualification VARCHAR(40),
+// email VARCHAR(20)
+// )";
 
-if ($conn->query($sql) === TRUE) {
-    echo "Table register created successfully";
-} else {
-    echo "Error creating table: " . $conn->error;
-}
+// if ($conn->query($sql) === TRUE) {
+//     echo "Table register created successfully";
+// } else {
+//     echo "Error creating table: " . $conn->error;
+// }
 
 
 
