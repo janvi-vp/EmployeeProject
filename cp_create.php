@@ -92,7 +92,7 @@ if ($conn->query($sql) === TRUE) {
  credits INT(30) NOT NULL,
  cid INT(6) ,
  -- FOREIGN KEY (lid) REFERENCES labast(lid),
- floor VARCHAR(30) NOT NULL
+ branch VARCHAR(30) NOT NULL
  )";
 
  if ($conn->query($sql) === TRUE) {
