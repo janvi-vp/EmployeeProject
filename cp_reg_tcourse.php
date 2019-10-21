@@ -88,6 +88,13 @@
 		  } else {
 		    $cname = test_input($_POST["cname"]);
 		  }
+		
+		if (empty($_POST["branch"])) {
+		  	$count++;
+		    alert('branch name required');
+		  } else {
+		    $branch = test_input($_POST["branch"]);
+		  }
 		}
 		// $cid=			$_POST['cid'];
 		// $name=			$_POST['name'];
@@ -112,9 +119,9 @@
 		// 	echo "error";
 		// }
 		if($count==0){
-		$sqll="INSERT INTO employee.course(cid,co_id,cname,credits) VALUES(?,?,?,?)";
+		$sqll="INSERT INTO employee.course(cid,co_id,cname,credits,branch) VALUES(?,?,?,?,?)";
 		$stmtinsert=$db->prepare($sqll);
-		$result=$stmtinsert->execute([$cid,$co_id,$cname,$credits]);
+		$result=$stmtinsert->execute([$cid,$co_id,$cname,$credits,$branch]);
 		if($result){
 			alert('signed up');}}
 		else{
@@ -153,6 +160,12 @@
 		  	$stmt= $db->prepare($sqll);
 		  	$result=$stmt->execute([$cname, $cid]);
 		  }
+		  if (!empty($_POST["branch"])) {
+		    $branch = test_input($_POST["branch"]);
+		    $sqll="UPDATE employee.course SET branch=? WHERE cid=?";
+		  	$stmt= $db->prepare($sqll);
+		  	$result=$stmt->execute([$branch, $cid]);
+		  }
 		}
 		
 		if($result){
@@ -163,8 +176,8 @@
 }
 
 if(isset($_POST['delete'])){
-		 $cidErr =$co_idErr= $cnameErr= $floorErr= "";
-		 $cid=$co_id= $cname= $floor="";
+		 $cidErr =$co_idErr= $cnameErr= $floorErr=$branchErr= "";
+		 $cid=$co_id= $cname= $floor=$branch="";
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (empty($_POST["cid"])) {
 		    $cidErr = "cid is req";
@@ -197,6 +210,9 @@ if(isset($_POST['delete'])){
 					<hr class="mb-3">
 					<label for="cid"><b>id</b></label>
 					<input class="form-control"type="number" name="cid" >
+
+					<label for="branch"><b>Branch</b></label>
+					<input class="form-control"type="text" name="branch" >
 
 					 <!-- <label for="name"><b>name</b></label>
 					<input class="form-control" type="text" name="name" >
