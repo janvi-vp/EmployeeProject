@@ -8,7 +8,26 @@
  <?php
 //require_once('config.php')
 ?>
-<style>.colii{background-color: #F7E410;height: 100%}</style>
+<style>.colii{background-color: #F7E410;height: 100%}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 
 </head>
 <body>
@@ -212,7 +231,13 @@ if(isset($_POST['delete'])){
 					<input class="form-control"type="number" name="cid" >
 
 					<label for="branch"><b>Branch</b></label>
-					<input class="form-control"type="text" name="branch" >
+					<br>
+					<select  style="padding-right: 24%;padding-bottom: 3%;border-style: none;"name="branch" placeholder="select">
+						<option value="Computer" class="dropdown">Computer Engineering</option>
+						<option value="IT" class="dropdown">Information Technology</option>
+						<option value="EXTC" class="dropdown">EXTC</option>
+						<option value="ETRX" class="dropdown">ETRX</option>
+					</select>
 
 					 <!-- <label for="name"><b>name</b></label>
 					<input class="form-control" type="text" name="name" >
